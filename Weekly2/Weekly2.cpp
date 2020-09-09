@@ -207,21 +207,6 @@ void Task8()
 
 }
 
-
-
-
-//int input = 1;
-// while (input <= 100)
-// {
-// 	std::cout << "\n" << input;
-// 	input++;
-// }
-	
-
-	//Subtask 2
-// 	
-
-
 int main()
 {
 int choice{ 0 };
@@ -282,35 +267,3 @@ int choice{ 0 };
 	return 0;
 
 }
-
-//do {
-// std::cout << "\n1 - Print name\n";
-// std::cout << "2 - How are you?\n";
-// std::cout << "3 - Print age\n";
-// std::cout << "4 - Exit the program\n";
-// std::cin >> answer;
-// 
-// switch (answer)
-// {
-// case 1:
-// 	std::cout << "\nYour name is " << name;
-// 	break;
-// case 2:
-// 	std::cout << "\nHow are you?";
-// 	break;
-// case 3:
-// 	std::cout << "\nYour age is: " << age;
-// 	break;
-// 
-// case 4:
-// 	std::cout << "\nGoodbye";
-// 	break;
-// 
-// default:
-// 	std::cout << "\nBad choice! Please try again!";
-// 	break;
-// }
-// 		} while (answer < 4 || answer < 0);
-// 		return answer;
-
-
