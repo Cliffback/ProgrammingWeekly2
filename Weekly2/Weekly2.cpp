@@ -71,13 +71,6 @@ void Task2()
 void Task3()
 {
 	system("CLS");
-	std::cout << "TBA\n";
-	PrevMenu();
-}
-
-void Task4()
-{
-	system("CLS");
 	int input = 5;
 
 	while (input <= 50)
@@ -89,7 +82,7 @@ void Task4()
 	PrevMenu();
 }
 
-void Task5()
+void Task4()
 {
 	system("CLS");
 	for (int i = 5; i < 50; i+=5)
@@ -99,14 +92,14 @@ void Task5()
 	PrevMenu();
 }
 
-void Task6()
+void Task5()
 {
 	system("CLS");
 	std::cout << "TBA";
 	PrevMenu();
 }
 
-void Task7()
+void Task6()
 {
 	system("CLS");
 	char grade;
@@ -148,12 +141,12 @@ void Task7()
 	{
 		std::cout << "\nWrong input. Please retry.";
 		char something = _getch();
-		Task7();
+		Task6();
 	}
 	
 }
 
-void Task8()
+void Task7()
 {
 	system("CLS");
 	char grade;
@@ -202,7 +195,7 @@ void Task8()
 	default:
 			std::cout << "\nWrong input. Please retry.";
 			char something = _getch();
-			Task7();
+			Task6();
 	}
 
 }
@@ -214,15 +207,14 @@ int choice{ 0 };
 	do
 	{
 		system("CLS");
-		std::cout << "Weekly 2 - Mathias Eek\n";
-		std::cout << "\nTask 1 - 1 to 100\n";
+		std::cout << "Weekly 2 - Mathias Eek\n\n";
+		std::cout << "Task 1 - 1 to 100\n";
 		std::cout << "Task 2 - 100 to 1\n";
-		std::cout << "Task 3 - TBA\n";
-		std::cout << "Task 4 - 5 to 50 in steps of 5 using a while loop\n";
-		std::cout << "Task 5 - 5 to 50 in steps of 5 using a for loop\n";
-		std::cout << "Task 6 - TBA\n";
-		std::cout << "Task 7 - What grade do you want in programming?\n";
-		std::cout << "Task 8 - Improvment of Task 7 (switch)\n";
+		std::cout << "Task 3 - 5 to 50 in steps of 5 using a while loop\n";
+		std::cout << "Task 4 - 5 to 50 in steps of 5 using a for loop\n";
+		std::cout << "Task 5 - TBA\n";
+		std::cout << "Task 6 - What grade do you want in programming?\n";
+		std::cout << "Task 7 - Improvment of Task 7 (switch)\n";
 
 		std::cout << "\nChoose a task number: ";
 		std::cin >> choice;
@@ -256,14 +248,10 @@ int choice{ 0 };
 			Task7();
 			break;
 
-		case 8:
-			Task8();
-			break;
-
 		default: std::cout << "Bad choice, try again!";
 			break;
 		}
-	} while (choice >= 1 || choice <= 8);
+	} while (choice >= 1 || choice <= 7);
 	return 0;
 
 }
